@@ -22,7 +22,8 @@ header{
   .logo{
     position: relative;
     top: 4rem;
-    background: whitel
+    background: white;
+    border-radius: 50%;
   }
 }
 .order{
