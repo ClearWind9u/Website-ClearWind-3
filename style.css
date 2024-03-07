@@ -1,5 +1,6 @@
 html{
-  background: linear-gradient(135deg, #FCBB60 0%, #FFCC6F 0%)
+  background: linear-gradient(135deg, #FC8B60 0%, #FFCC6F 100%);
+  background-repeat:no-repeat;
 }
 
 body{
