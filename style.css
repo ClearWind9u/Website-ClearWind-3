@@ -28,6 +28,7 @@ header{
   
 }
 .order{
+  padding: 1.5rem;
   flex: 1;
   background: white;
   border-radius: 0 0 1rem 1rem;
