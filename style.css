@@ -25,10 +25,11 @@ header{
     background: white;
     border-radius: 50%;
   }
+  
 }
 .order{
   flex: 1;
   background: white;
   border-radius: 0 0 1rem 1rem;
-  
+  padding-top: 4rem;
 }
