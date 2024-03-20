@@ -61,11 +61,15 @@ header{
     display: flex;
     
     .item-name{
-      flex-basis: 10rem;
+      flex-basis:15rem;
     }
     
     .item-quantity{
       flex-basis:10rem;
+      
+      input{
+        width:40px;
+      }
     }
     
     .item-price{
