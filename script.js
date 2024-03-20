@@ -11,11 +11,27 @@ function render() {
     subTotal += item.quantity * item.price;
   });
   const total = subTotal + SHIPPING;
-  const html = items.map
+  const html = items.map(item => `
+                         <li class="order-item">
+          
+          <span class="item-name">${item.name}</span>
+          
+          <span class="item-quantity">
+            <button>-</button>
+            <input type="item-number" value="${item.quantity}" />
+            <button>+</button>
+          </span>
 
-  document.getElementById('sub-total').innerText = `$${subTotal.toFixed(2)}`;
-  document.getElementById('shipping').innerText = `$${SHIPPING}`;
-  document.getElementById('total').innerText = `$${total.toFixed(2)}`;
+          <span class="item-price">
+            <span>$${(item.quantity * item.price).toFixed(2)}</span>
+            <button>x</button>
+          </span>
+        </li>`).join('')
+  
+  document.getElementById('order-items').innerHTML = html
+  document.getElementById('sub-total').innerText = `$${subTotal.toFixed(2)}`
+  document.getElementById('shipping').innerText = `$${SHIPPING}`
+  document.getElementById('total').innerText = `$${total.toFixed(2)}`
 }
 function add() {
   items.push({
@@ -24,4 +40,8 @@ function add() {
     price: Math.random() * 10
   })
 }
+$('#btn-add').addEventListener('click',() =>{
+  add()
+})
+
 render();
