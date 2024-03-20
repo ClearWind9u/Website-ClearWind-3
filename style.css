@@ -30,11 +30,11 @@ header{
   
 }
 .order{
-  padding: 1.5rem;
+  padding: 1rem;
   flex: 1;
   background: white;
   border-radius: 0 0 1rem 1rem;
-  padding-top: 4rem;
+  padding-top: 2.5rem;
   
   .header{
     text-align:center;
