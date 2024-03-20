@@ -17,10 +17,8 @@ header{
   flex-basis: 12rem;
   background: rgba(255, 73, 36, 0.83);
   text-align:center;
-  position: relative;
   
   .logo{
-    position: relative;
     top: 4rem;
     background: white;
     border-radius: 50%;
