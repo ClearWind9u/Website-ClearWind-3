@@ -5,6 +5,20 @@ const items = [
 ];
 const SHIPPING = 2;
 
+function add() {
+  items.push({
+    name: `Pizza ${Math.random()}`,
+    quantity: 1,
+    price: Math.random() * 10
+  })
+  render();
+}
+
+function remove(index){
+  items.splice(index,1)
+  render();
+}
+
 function render() {
   let subTotal = 0;
   items.forEach((item) => {
@@ -17,31 +31,32 @@ function render() {
           <span class="item-name">${item.name}</span>
           
           <span class="item-quantity">
-            <button>-</button>
+            <button class="dec">-</button>
             <input type="item-number" value="${item.quantity}" />
-            <button>+</button>
+            <button class='inc'>+</button>
           </span>
 
           <span class="item-price">
             <span>$${(item.quantity * item.price).toFixed(2)}</span>
-            <button>x</button>
+            <button class="delete btn-delete">x</button>
           </span>
         </li>`).join('')
   
   document.getElementById('order-items').innerHTML = html
+  
+  const deleteButtons = [...$$('.delete')]
+  for(let i = 0; i < deleteButtons.length; i++){
+    deleteButtons[i].addEventListener('click', () => {
+      remove[i];
+    })
+  }
+  
   document.getElementById('sub-total').innerText = `$${subTotal.toFixed(2)}`
   document.getElementById('shipping').innerText = `$${SHIPPING}`
   document.getElementById('total').innerText = `$${total.toFixed(2)}`
 }
-function add() {
-  items.push({
-    name: `Pizza ${Math.random()}`,
-    quantity: 1,
-    price: Math.random() * 10
-  })
-  render();
-}
-$('#btn-add').addEventListener('click',() =>{
+
+document.getElementById('btn-add').addEventListener('click',() =>{
   add()
 })
 
