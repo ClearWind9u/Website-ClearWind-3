@@ -35,10 +35,11 @@ function render() {
 }
 function add() {
   items.push({
-    name: 'Pizza ${Math.random()}',
+    name: `Pizza ${Math.random()}`,
     quantity: 1,
     price: Math.random() * 10
   })
+  render();
 }
 $('#btn-add').addEventListener('click',() =>{
   add()
