@@ -86,12 +86,12 @@ header{
   }
   .order-summary{
     padding: 0.5rem;
-    margin: 0.5rem 0;
+    margin: 0.2rem 0.1rem;
     background: #F4F4F6;
     border-radius: 0.5rem;
     font-size: 1.25rem;
     font-weight: 500;
-    line-height: 1.5rem;
+    line-height: 1.25rem;
     
     .money{
       float:right;
@@ -99,13 +99,14 @@ header{
   }
   
   #btn-add{
-    margin-top: 1rem;
+    margin: 0.5rem 0;
     border: 1px solid gray;
-    width: 18rem;
+    width: 10rem;
     background: white;
   }
   
   #btn-checkout{
+    margin-top:0.5rem;
     width: 100%;
     background: #FF6144;
     color: white;
