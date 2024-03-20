@@ -12,9 +12,9 @@ function render() {
   });
   const total = subTotal + SHIPPING;
 
-  $("#sub-total").innerText = "$$(subTotal.toFixed(2))";
-  $("#shipping").innerText = "$$(SHIPPING)";
-  $("#total").innerText = "$$(total.toFixed(2))";
+  $('#sub-total').innerText = "$${subTotal.toFixed(2)}";
+  $('#shipping').innerText = "$${SHIPPING}";
+  $('#total').innerText = "$${total.toFixed(2)}";
 }
 function add() {}
 render();
