@@ -37,7 +37,10 @@ header{
   padding-top: 4rem;
   
   .header{
-    
+    text-align:center;
+    font-size:1.5rem;
+    margin-bottom:1rem;
+    font-weight:600;
   }
   
   button{
@@ -48,10 +51,10 @@ header{
   }
   .order-item{
     button{
-      padding: 0.25rem;
-      width: 20px;
-      height: 20px;
-      line-height: 20px;
+      padding: 0.5rem;
+      width: 30px;
+      height: 30px;
+      line-height: 10px;
       font-size: 1.5rem;
     }
     
@@ -84,7 +87,7 @@ header{
   }
   
   #btn-add{
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     border: 1px solid gray;
     width: 18rem;
     background: white;
