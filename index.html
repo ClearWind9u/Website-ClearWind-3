@@ -7,64 +7,48 @@
     <title>Website ClearWind 3</title>
     <link rel="stylesheet" href="/style.css" />
     <script src="/script.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h1>
-        Hello
-      </h1>
       <img
-          class="logo" width="150"
-          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpGg9Igrts3lnTliTKXyzReX4pAPglns9bVdATCpynIQ0jh29rigyhXpWbN9Xh4EOxXntgg74VkrDx3cLU7q2tNTiP6bmG3JTv4u431642ag6mweY8ki4xEVm-xen08jWxzXd3U1TMmQXV_4YCNgZ58QEeGo9-xmsnYQ7li9etbcbHit9tWi3x8DeFnA/s480/kfc.png"
-        />
+        class="logo"
+        width="150"
+        src="https://i.pinimg.com/originals/ac/3e/38/ac3e388c5bdce08726ece882756d14c2.jpg"
+      />
     </header>
     <div class="order">
-      <h1>
-        Your order from KFC
-      </h1>
+      <h1>Your order from KFC</h1>
       <ul class="order-items">
         <li class="order-item">
-        <span>Pizza 001</span>
-        <span class="quantity">
-          <button>
-            -
-          </button>
-          <input type="number" value="1"/>
-          <button>
-            +
-          </button>
+          <span>Pizza 001</span>
+          <span class="quantity">
+            <button>-</button>
+            <input type="number" value="1" />
+            <button>+</button>
           </span>
-          
+
           <span class="price">
             <span>$7.99</span>
-            <button>
-              X
-            </button>
+            <button>X</button>
           </span>
         </li>
       </ul>
+
+      <button>Add Food</button>
       
-      <button>
-        Add Food
-      </button>
       <div class="order-summary">
-        <p>
-          Subtotal <span class="money">$15.98</span>
-        </p>
-        <p>
-          Shipping <span class="money">$2</span>
-        </p>
-        <p>
-          Total <span class="money">$17</span>
-        </p>
+        <p>Subtotal <span class="money">$15.98</span></p>
+        <p>Shipping <span class="money">$2</span></p>
+        <p>Total <span class="money">$17</span></p>
       </div>
       
-      <button>
-        Checkout
-      </button>
+      <button id="btn-checkout">Checkout</button>
     </div>
   </body>
 </html>

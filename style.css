@@ -17,9 +17,11 @@ header{
   flex-basis: 12rem;
   background: rgba(255, 73, 36, 0.83);
   text-align:center;
+  position: relative;
   
   .logo{
-    top: 4rem;
+    position: relative;
+    top: 6rem;
     background: white;
     border-radius: 50%;
   }
@@ -31,4 +33,27 @@ header{
   background: white;
   border-radius: 0 0 1rem 1rem;
   padding-top: 4rem;
+  
+  button{
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .order-summary{
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: #F4F4F6;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-weight: 2.5rem;
+  }
+  
+  #btn-checkout{
+    width: 100%;
+    background: #FF6144;
+    color: white;
+  }
 }
