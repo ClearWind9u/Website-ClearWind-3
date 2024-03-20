@@ -15,7 +15,7 @@ function add() {
 }
 
 function remove(index){
-  items.splice(index,1)
+  items.splice(index, 1)
   render();
 }
 
@@ -44,10 +44,10 @@ function render() {
   
   document.getElementById('order-items').innerHTML = html
   
-  const deleteButtons = [...$$('.delete')]
+  const deleteButtons = [ ...document.querySelectorAll('.delete')]
   for(let i = 0; i < deleteButtons.length; i++){
     deleteButtons[i].addEventListener('click', () => {
-      remove[i];
+      remove(i);
     })
   }
   
