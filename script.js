@@ -19,6 +19,14 @@ function remove(index){
   render();
 }
 
+function updateQuantity(index, quantity){
+  if (quantity < 1){
+    return
+  }
+  items[index].quantity = quantity
+  render()
+}
+
 function render() {
   let subTotal = 0;
   items.forEach((item) => {
@@ -33,7 +41,7 @@ function render() {
           <span class="item-quantity">
             <button class="dec">-</button>
             <input type="item-number" value="${item.quantity}" />
-            <button class='inc'>+</button>
+            <button class="inc">+</button>
           </span>
 
           <span class="item-price">
@@ -45,7 +53,15 @@ function render() {
   document.getElementById('order-items').innerHTML = html
   
   const deleteButtons = [ ...document.querySelectorAll('.delete')]
+  const decButtons = [...document.querySelectorAll('.dec')]
+  const incButtons = [...document.querySelectorAll('.inc')]
   for(let i = 0; i < deleteButtons.length; i++){
+    decButtons[i].addEventListener('click', () => {
+      updateQuantity(i, items[i].quantity - 1);
+    })
+    incButtons[i].addEventListener('click', () => {
+      updateQuantity(i, items[i].quantity + 1);
+    })
     deleteButtons[i].addEventListener('click', () => {
       remove(i);
     })
